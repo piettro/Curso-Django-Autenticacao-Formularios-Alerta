@@ -5,7 +5,7 @@ class ListandoFotografia(admin.ModelAdmin):
     list_display = ('id','nome','legenda','publicada')
     list_display_links = ('id','nome')
     search_fields = ('id', 'nome')
-    list_filter = ('categoria',)
+    list_filter = ('categoria','usuario')
     list_per_page = 10
     list_editable = ("publicada",)
     sortable_by = ("data_fotografia",)
